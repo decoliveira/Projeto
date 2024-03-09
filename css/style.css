@@ -1,0 +1,231 @@
+/* Importação da fonte Rubik do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+/* Definição de variáveis para as cores principais */
+:root{
+    --corprincipal: #EEF5FF;
+    --corsecundária: #c4deff;
+    --corterciária: #86B6F6;
+    --cortitulo: #0A3871;
+}
+
+/* Estilização geral do corpo do documento */
+body {
+    background: var(--corprincipal);
+}
+
+/* Reset de margens, preenchimentos e fonte padrão */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Estilização do cabeçalho */
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0 0 5%;
+}
+
+/* Estilização do título do cabeçalho */
+.cabecalho h1{
+    color: var(--cortitulo);
+}
+
+/* Estilização do logotipo do cabeçalho */
+.cabecalho img{
+    max-width: 120px;
+    max-height: 48px;
+    width: auto;
+    height: auto;
+    gap: 40px;
+}
+
+/* Estilização do container de entrada de texto */
+.container-input{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 240px;
+}
+
+/* Estilização do container do texto de entrada */
+.container-input .input{
+    width: 400px;
+    height: 330px;
+}
+
+/* Estilização do texto de entrada */
+#input-texto{
+    width: 345px;
+    height: 400px;
+    font-size: 32px;
+    color: var(--cortitulo);
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    resize: none;
+    outline: 0;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+/* Estilização do ícone de informação */
+.icone-info ion-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+/* Estilização do parágrafo de informação */
+.p{
+    width: 252px;
+    height: 18px;
+    gap: 8px;
+}
+
+/* Estilização do container de saída de texto */
+#output{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;
+    background: var(--corsecundária);
+    border-radius: 35px;
+    width: 350px;
+    height: 450px;
+    margin-right: 2%;
+    color: transparent;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Impede a rolagem vertical */
+    text-align: center;
+}
+
+/* Estilização do título de saída */
+#output h2{
+    text-align: center;
+    font-size: 25px;
+    color: var(--cortitulo);
+}
+
+/* Estilização do subtítulo de saída */
+.subtitulo {
+    font-size: 18px;
+    color: var(--cortitulo);
+    margin-top: 10px;
+    display: block;
+}
+
+/* Estilização da mensagem de texto copiado */
+.mensagem-copiado {
+    display: none; /* Por padrão, a mensagem é ocultada */
+    font-size: 16px;
+    color: var(--cortitulo);
+    margin-bottom: 10px; /* Ajuste o espaçamento para ficar acima do botão */
+    text-align: center;
+}
+
+/* Estilização do texto de saída */
+#output-texto {
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    text-align: center;
+    color: var(--cortitulo);
+    background: transparent;
+    border: none; /* Remova a borda */
+    outline: none; /* Remova a aparência de foco */
+    box-shadow: none; /* Remova a sombra */
+    resize: none; /* Impede o redimensionamento */
+    overflow: hidden; /* Impede a rolagem vertical */
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+/* Estilização do texto de saída */
+#output span{
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Estilização da imagem de saída */
+#output img{
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    margin-top: 4%;
+}
+
+/* Estilização do container de botões */
+.container-bnt{
+    margin-left: 240px;
+}
+
+/* Estilização dos botões */
+.container-bnt button{
+    border: 2px solid var(--cortitulo);
+    border-radius: 24px;
+    text-decoration: none;
+    color: var(--cortitulo);
+    width: 328px;
+    height: 67px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Estilização do botão de copiar */
+.btn-copiar{
+    border: 2px solid var(--cortitulo);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--cortitulo);
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10%;
+    cursor: pointer;
+    align-items: center;
+}
+
+/* Estilização do botão de copiar ao passar o mouse */
+.btn-copiar:hover{
+    background: var(--cortitulo);
+    color: var(--corprincipal);
+    transition: 0.5s all;
+}
+
+/* Estilização dos botões ao passar o mouse */
+.container-bnt button:hover{
+    background: var(--cortitulo);
+    color: var(--corprincipal);
+    transition: 0.5s all;
+}
+
+/* Estilização do rodapé */
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-top: 15px;
+    background: var(--cortitulo);
+    color: var(--corprincipal);
+}
+
+/* Estilização do título do rodapé */
+.rodape h3{
+    font-size: 24px;
+}
+
+/* Estilização dos ícones de rede social */
+.icons ion-icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    color: var(--corprincipal);
+}
+
+/* Estilização dos ícones de rede social ao passar o mouse */
+.icons ion-icon:hover{
+    color: var(--corterciária);
+}

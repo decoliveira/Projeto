@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia e Descriptografia</title>
+    <!-- Inclusão do arquivo CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Ícone da página -->
+    <link rel="shortcut icon" href="imagens/sun-color.png" type="image/x-icon">
+</head>
+<body>
+
+<main class="main container">
+
+    <header class="cabecalho">
+        <!-- Logotipo da Alura -->
+        <img src="imagens/logo-alura.png" alt="logoalura">
+    </header>
+
+    <div class="container-input">
+        <!-- Área para entrada de texto -->
+        <div class="input">
+            <textarea id="input-texto" placeholder="Digite o texto aqui..."></textarea>
+            <!-- Informação sobre as restrições do texto -->
+            <p><a class="icone-info"><ion-icon name="information-circle"></ion-icon></a>
+            </a>Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <!-- Área para exibição de resultados -->
+        <div id="output">
+            <!-- Imagem de resultado padrão -->
+            <img id="output-img" src="imagens/no-result.svg" alt="logoalura" height="330px" width="400px">
+            <!-- Mensagem padrão quando nenhum resultado é encontrado -->
+            <h2>Nenhuma mensagem encontrada</h2>
+            <!-- Instrução para o usuário -->
+            <span class="subtitulo">Digite um texto que você deseja criptografar ou descriptografar.</span>
+            <!-- Área para exibir o texto criptografado/descriptografado -->
+            <textarea id="output-texto" style="display: none;" readonly></textarea>
+            <!-- Botão para copiar o texto exibido -->
+            <button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>
+            <!-- Mensagem indicando que o texto foi copiado -->
+            <span id="mensagem-copiado" class="mensagem-copiado">Texto copiado!</span>
+
+        </div>
+    </div>
+
+    <div class="buttons">
+        <!-- Botões para criptografar e descriptografar -->
+        <div class="container-bnt">
+            <button onclick="criptografar()" class="btn-criptografar">Criptografar</button>
+            <button onclick="descriptografar()" class="btn-descriptografar">Descriptografar</button>
+        </div>
+    </div>
+</main>
+<footer class="rodape">
+    <div class="icons">
+        <!-- Links para redes sociais -->
+        <a href="https://www.instagram.com/_decoliveira"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="https://github.com/_decoliveira"><ion-icon name="logo-github"></ion-icon></a>
+        <a href="https://www.linkedin.com/in/decoliveira/"><ion-icon name="logo-linkedin"></ion-icon></a>
+    </div>
+    <!-- Créditos do desenvolvedor -->
+    <h3>Desenvolvido por André Oliveira</h3>
+</footer>
+<!-- Inclusão do arquivo JavaScript -->
+<script src="js/script.js"></script>
+<!-- Inclusão do pacote de ícones Ionicons -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
